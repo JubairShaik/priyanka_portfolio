@@ -8,6 +8,15 @@ import nextjs from "../assets/nextjs.png";
 import powerbi from "../assets/powerbi.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
+ 
+import  pandas from "../assets/pandas.svg";
+
+import  python from "../assets/python.svg";
+import  c from "../assets/c.svg";
+import  Java from "../assets/java.png";
+import  php  from "../assets/php.svg";
+ 
+
 
 const Experience = () => {
   const techs = [
@@ -36,45 +45,52 @@ const Experience = () => {
       style: "shadow-blue-600",
     },
     {
-      id: 5,
-      src: tailwind,
-      title: "Tailwind",
-      style: "shadow-sky-400",
-    },
-    {
-      id: 6,
-      src: nextjs,
-      title: "Next JS",
-      style: "shadow-white",
-    },
-    {
       id: 7,
-      src: powerbi,
-      title: "GraphQL",
-      style: "shadow-pink-400",
+      src: python,
+      title: "Python",
+      style: "shadow-yellow-500",
     },
     {
       id: 8,
+      src: pandas ,
+      title: "Pandas",
+      style: "shadow-blue-900",
+    },
+    {
+      id: 9,
       src: github,
-      title: "GitHub",
-      style: "shadow-gray-400",
+      title: "Github",
+      style: "shadow-slate-500",
+    },
+    {
+      id: 10,
+      src: c,
+      title: "C",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 11,
+      src: php ,
+      title: "PHP",
+      style: "shadow-slate-500",
     },
   ];
 
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen"
+
+      className="  md:h-screen  mt-10 md:mt-0"
     >
-      <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
-        <div>
+      <div className="max-w-screen-lg mx-auto p-2 flex flex-col justify-center w-full h-full text-white">
+        <div className="p-4">
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
             Experience
           </p>
           <p className="py-6">These are the technologies I've worked with</p>
         </div>
 
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-5 px-4  sm:px-0">
           {techs.map(({ id, src, title, style }) => (
             <div
               key={id}
