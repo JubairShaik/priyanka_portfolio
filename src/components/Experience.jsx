@@ -8,14 +8,12 @@ import nextjs from "../assets/nextjs.png";
 import powerbi from "../assets/powerbi.png";
 import github from "../assets/github.png";
 import tailwind from "../assets/tailwind.png";
- 
 import  pandas from "../assets/pandas.svg";
-
 import  python from "../assets/python.svg";
 import  c from "../assets/c.svg";
-import  Java from "../assets/java.png";
 import  php  from "../assets/php.svg";
  
+
 
 
 const Experience = () => {
